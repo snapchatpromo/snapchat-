@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('background.png'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 340px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 650;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #949494;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    font-size: 11.5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #18a8f5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: auto; /* Removed fixed width */
+    min-width: 88px; /* Ensures the button doesn't get too small */
+    text-align: center;
+}
+
+button:hover {
+    background-color: #008fd1;
+}
+
+.phone-login {
+    display: block;
+    font-weight: 790;
+    margin-top: 30px;
+    color: #00a2f9;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.phone-login:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+}
+
+.signup a {
+    color: #00a2f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Cookie Popup Styles */
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.cookie-popup p {
+    margin: 0;
+    font-size: 14px;
+    flex: 1;
+}
+
+.cookie-popup a {
+    color: #00a2f9;
+    text-decoration: none;
+}
+
+.cookie-popup a:hover {
+    text-decoration: underline;
+}
+
+.cookie-popup button {
+    background-color: #18a8f5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cookie-popup button:hover {
+    background-color: #008fd1;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        width: 30%; /* Makes button full-width on small screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 12px 0; /* Adjust padding for a more compact button */
+    }
+
+    .cookie-popup {
+        padding: 10px 15px;
+        flex-direction: column;
+    }
+
+    .cookie-popup p {
+        margin-bottom: 10px;
+    }
+
+    .cookie-popup button {
+        width: 100%;
+        padding: 10px;
+    }
+}
